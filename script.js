@@ -5,7 +5,7 @@ function checkPassword() {
 
   let score = 0;
 
-  if (pwd.length >= 8) score++;
+  if (pwd.length >= 9) score++;
   if (/[A-Z]/.test(pwd)) score++;
   if (/[0-9]/.test(pwd)) score++;
   if (/[\W]/.test(pwd)) score++;
@@ -18,3 +18,20 @@ function checkPassword() {
 
   result.textContent = `Password strength: ${strength}`;
 }
+function checkSite() {
+  const url = document.getElementById("siteUrl").value;
+  const output = document.getElementById("siteResult");
+
+  // Temporary hardcoded logic (you’ll replace this with an API call later)
+  if (url.includes("facebook") || url.includes("google")) {
+    output.textContent = " Safe";
+    output.style.color = "green";
+  } else if (url.includes("free-money") || url.includes("click-here")) {
+    output.textContent = " Dangerous";
+    output.style.color = "red";
+  } else {
+    output.textContent = " Suspicious — use caution";
+    output.style.color = "orange";
+  }
+}
+

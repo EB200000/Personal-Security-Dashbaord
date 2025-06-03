@@ -43,3 +43,7 @@ button:hover {
   font-weight: bold;
   margin-top: 15px;
 }
+#siteResult {
+  font-weight: bold;
+  margin-top: 10px;
+}
