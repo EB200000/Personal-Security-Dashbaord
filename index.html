@@ -1,35 +1,28 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <style>
-    body {
-      background-color:lightblue;
-    }
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>replit</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
-    
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Personal Security Dashboard</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
   <h1>Personal Security Dashboard</h1>
 
-  <label for="password">Enter a password:</label>
-  <input type="password" id="password" />
-  <button onclick="checkPassword()">Check Strength</button>
+  <section class="password-checker">
+    <label for="password">Enter a password:</label>
+    <input type="password" id="password">
+    <button id="checkPasswordBtn">Check Strength</button>
+    <p id="result"></p>
+  </section>
 
-  <p id="result"></p>
+  <section class="url-checker">
+    <h2>Check a Website's Safety</h2>
+    <input type="text" id="siteUrl" placeholder="Enter website URL">
+    <button id="checkSiteBtn">Check Site Safety</button>
+    <p id="siteResult"></p>
+  </section>
 
-  <h2>Check a Website's Safety</h2>
-<input type="text" id="siteUrl" placeholder="Enter website URL" />
-<button onclick="checkSite()">Check Site Safety</button>
-<p id="siteResult"></p>
-
-
-
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
