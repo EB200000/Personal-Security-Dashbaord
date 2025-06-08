@@ -16,8 +16,13 @@ h1 {
   color: #2c3e50;
 }
 
-/* Input + button */
-input[type="password"] {
+section {
+  margin-bottom: 30px;
+}
+
+/* Input elements */
+input[type="password"],
+input[type="text"] {
   padding: 10px;
   margin: 10px 0;
   width: 250px;
